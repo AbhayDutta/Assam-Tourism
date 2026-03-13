@@ -149,7 +149,7 @@ export default function Home() {
             Discover Assam&apos;s
             <span className="bg-gradient-to-r from-sky-400 to-indigo-400 bg-clip-text text-transparent">
               {" "}
-              Cultural Heritage
+              Culturl Heritage
             </span>
           </h1>
           <p className="mx-auto max-w-2xl text-sm text-slate-400 sm:text-base">
@@ -199,6 +199,7 @@ export default function Home() {
               </div>
               <div className="h-[400px] overflow-hidden rounded-xl border border-white/5">
                 <AssamMap
+                  key="assam-map"
                   selectedDistrictSlug={district}
                   onSelectDistrict={(slug) => setDistrict(slug)}
                 />

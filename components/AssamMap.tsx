@@ -3,7 +3,7 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 
 const defaultCenter: [number, number] = [26.2, 92.9]; // Rough center of Assam
 
@@ -48,12 +48,23 @@ export function AssamMap({
   selectedDistrictSlug,
   onSelectDistrict,
 }: AssamMapProps) {
-  useEffect(() => {
+  const isClient = typeof window !== 'undefined';
+
+  useLayoutEffect(() => {
     configureLeafletIcons();
   }, []);
 
+  if (!isClient) {
+    return (
+      <div className="flex h-full w-full items-center justify-center text-sm text-slate-400">
+        Loading map...
+      </div>
+    );
+  }
+
   return (
     <MapContainer
+      id="assam-cultural-map"
       center={defaultCenter}
       zoom={7}
       style={{ width: "100%", height: "100%" }}
