@@ -24,6 +24,7 @@ const DISTRICTS: DistrictMarker[] = [
   { slug: "tinsukia", name: "Tinsukia", position: [27.5, 95.3667] },
   { slug: "goalpara", name: "Goalpara", position: [26.1667, 90.6167] },
   { slug: "nalbari", name: "Nalbari", position: [26.45, 91.45] },
+  { slug: "morigaon", name: "Morigaon", position: [26.25, 92.35] },
 ];
 
 // Fix default marker icon paths for Leaflet in Next.js
@@ -101,4 +102,3 @@ export function AssamMap({
     </MapContainer>
   );
 }
-

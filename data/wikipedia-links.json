@@ -1,0 +1,291 @@
+{
+  "wikipedia_links": {
+    "Guwahati": {
+      "festivals": {
+        "Ambubachi Mela": "https://en.wikipedia.org/wiki/Ambubachi_Mela",
+        "Brahmaputra Beach Festival": "https://en.wikipedia.org/wiki/Brahmaputra_Beach_Festival",
+        "Rongali Bihu": "https://en.wikipedia.org/wiki/Bihu",
+        "Magh Bihu": "https://en.wikipedia.org/wiki/Magh_Bihu",
+        "Kati Bihu": "https://en.wikipedia.org/wiki/Kati_Bihu"
+      },
+      "cuisine": {
+        "Assamese Thali": "https://en.wikipedia.org/wiki/Assamese_cuisine",
+        "Fish Tenga": "https://en.wikipedia.org/wiki/Fish_tenga",
+        "Pitha": "https://en.wikipedia.org/wiki/Pitha",
+        "Til Laru": "https://en.wikipedia.org/wiki/Til_laddu"
+      },
+      "crafts": {
+        "Bamboo and cane craft": "https://en.wikipedia.org/wiki/Bamboo_crafts_of_Assam",
+        "Silk weaving (Muga, Eri)": "https://en.wikipedia.org/wiki/Muga_silk",
+        "Bell metal craft": "https://en.wikipedia.org/wiki/Bell_metal"
+      },
+      "heritage": {
+        "Kamakhya Temple": "https://en.wikipedia.org/wiki/Kamakhya_Temple",
+        "Umananda Temple": "https://en.wikipedia.org/wiki/Umananda_Temple",
+        "Assam State Museum": "https://en.wikipedia.org/wiki/Assam_State_Museum"
+      },
+      "folk_art": {
+        "Bihu Dance": "https://en.wikipedia.org/wiki/Bihu_dance",
+        "Sattriya Dance": "https://en.wikipedia.org/wiki/Sattriya",
+        "Ojapali": "https://en.wikipedia.org/wiki/Ojapali"
+      }
+    },
+    "Majuli": {
+      "festivals": {
+        "Raas Mahotsav": "https://en.wikipedia.org/wiki/Rasa_lila",
+        "Ali Ai Ligang": "https://en.wikipedia.org/wiki/Ali-Ai-Ligang",
+        "Bihu": "https://en.wikipedia.org/wiki/Bihu",
+        "Majuli Music Festival": "https://en.wikipedia.org/wiki/Majuli"
+      },
+      "cuisine": {
+        "Apong": "https://en.wikipedia.org/wiki/Apong",
+        "Pura Maas": "https://en.wikipedia.org/wiki/Assamese_cuisine",
+        "Pitha": "https://en.wikipedia.org/wiki/Pitha",
+        "Smoked fish": "https://en.wikipedia.org/wiki/Smoked_fish"
+      },
+      "crafts": {
+        "Mask making": "https://en.wikipedia.org/wiki/Mask-making",
+        "Handloom weaving": "https://en.wikipedia.org/wiki/Handloom",
+        "Pottery": "https://en.wikipedia.org/wiki/Pottery",
+        "Bamboo craft": "https://en.wikipedia.org/wiki/Bamboo_crafts_of_Assam"
+      },
+      "heritage": {
+        "Dakhinpat Satra": "https://en.wikipedia.org/wiki/Satra_(institution)",
+        "Kamalabari Satra": "https://en.wikipedia.org/wiki/Satra_(institution)",
+        "Auniati Satra": "https://en.wikipedia.org/wiki/Satra_(institution)"
+      },
+      "folk_art": {
+        "Bhaona theatre": "https://en.wikipedia.org/wiki/Bhaona",
+        "Sattriya dance": "https://en.wikipedia.org/wiki/Sattriya",
+        "Gumrag dance": "https://en.wikipedia.org/wiki/Mising_people"
+      }
+    },
+    "Sivasagar": {
+      "festivals": {
+        "Bihu": "https://en.wikipedia.org/wiki/Bihu",
+        "Raas Festival": "https://en.wikipedia.org/wiki/Rasa_lila",
+        "Me Dam Me Phi": "https://en.wikipedia.org/wiki/Me-Dam-Me-Phi"
+      },
+      "cuisine": {
+        "Duck curry": "https://en.wikipedia.org/wiki/Assamese_cuisine",
+        "Fish tenga": "https://en.wikipedia.org/wiki/Fish_tenga",
+        "Pitha": "https://en.wikipedia.org/wiki/Pitha"
+      },
+      "crafts": {
+        "Mask craft": "https://en.wikipedia.org/wiki/Mask-making",
+        "Brass and bell metal work": "https://en.wikipedia.org/wiki/Bell_metal"
+      },
+      "heritage": {
+        "Rang Ghar": "https://en.wikipedia.org/wiki/Rang_Ghar",
+        "Talatal Ghar": "https://en.wikipedia.org/wiki/Talatal_Ghar",
+        "Sivasagar Tank": "https://en.wikipedia.org/wiki/Sivasagar"
+      },
+      "folk_art": {
+        "Sattriya dance": "https://en.wikipedia.org/wiki/Sattriya",
+        "Bhaona": "https://en.wikipedia.org/wiki/Bhaona",
+        "Bihu dance": "https://en.wikipedia.org/wiki/Bihu_dance"
+      }
+    },
+    "Kaziranga": {
+      "festivals": {
+        "Karbi Youth Festival": "https://en.wikipedia.org/wiki/Karbi_people",
+        "Rongali Bihu": "https://en.wikipedia.org/wiki/Bihu",
+        "Kaziranga Elephant Festival": "https://en.wikipedia.org/wiki/Kaziranga_National_Park"
+      },
+      "cuisine": {
+        "Bamboo shoot curry": "https://en.wikipedia.org/wiki/Bamboo_shoot",
+        "Smoked pork": "https://en.wikipedia.org/wiki/Smoked_meat",
+        "Rice beer": "https://en.wikipedia.org/wiki/Rice_beer"
+      },
+      "crafts": {
+        "Karbi weaving": "https://en.wikipedia.org/wiki/Karbi_people",
+        "Bamboo handicrafts": "https://en.wikipedia.org/wiki/Bamboo_crafts_of_Assam"
+      },
+      "heritage": {
+        "Kaziranga National Park": "https://en.wikipedia.org/wiki/Kaziranga_National_Park"
+      },
+      "folk_art": {
+        "Karbi tribal dance": "https://en.wikipedia.org/wiki/Karbi_people",
+        "Bihu dance": "https://en.wikipedia.org/wiki/Bihu_dance"
+      }
+    },
+    "Tezpur": {
+      "festivals": {
+        "Litchi Festival": "https://en.wikipedia.org/wiki/Litchi",
+        "Bihu": "https://en.wikipedia.org/wiki/Bihu",
+        "Durga Puja": "https://en.wikipedia.org/wiki/Durga_Puja"
+      },
+      "cuisine": {
+        "Assamese Thali": "https://en.wikipedia.org/wiki/Assamese_cuisine",
+        "Pitha": "https://en.wikipedia.org/wiki/Pitha",
+        "Fish dishes": "https://en.wikipedia.org/wiki/Assamese_cuisine"
+      },
+      "crafts": {
+        "Handloom weaving": "https://en.wikipedia.org/wiki/Handloom",
+        "Bamboo crafts": "https://en.wikipedia.org/wiki/Bamboo_crafts_of_Assam"
+      },
+      "heritage": {
+        "Agnigarh Hill": "https://en.wikipedia.org/wiki/Agnigarh",
+        "Mahabhairab Temple": "https://en.wikipedia.org/wiki/Mahabhairab_Temple",
+        "Bamuni Hills": "https://en.wikipedia.org/wiki/Tezpur"
+      },
+      "folk_art": {
+        "Bihu dance": "https://en.wikipedia.org/wiki/Bihu_dance",
+        "Ojapali": "https://en.wikipedia.org/wiki/Ojapali"
+      }
+    },
+    "Jorhat": {
+      "festivals": {
+        "Tea Festival": "https://en.wikipedia.org/wiki/Assam_tea",
+        "Bihu": "https://en.wikipedia.org/wiki/Bihu",
+        "Ali Ai Ligang": "https://en.wikipedia.org/wiki/Ali-Ai-Ligang"
+      },
+      "cuisine": {
+        "Assamese fish curry": "https://en.wikipedia.org/wiki/Assamese_cuisine",
+        "Pitha": "https://en.wikipedia.org/wiki/Pitha",
+        "Rice beer": "https://en.wikipedia.org/wiki/Rice_beer"
+      },
+      "crafts": {
+        "Tea craft souvenirs": "https://en.wikipedia.org/wiki/Assam_tea",
+        "Bamboo craft": "https://en.wikipedia.org/wiki/Bamboo_crafts_of_Assam",
+        "Silk weaving": "https://en.wikipedia.org/wiki/Muga_silk"
+      },
+      "heritage": {
+        "Tocklai Tea Research Institute": "https://en.wikipedia.org/wiki/Tocklai_Research_Association",
+        "Raja Maidam": "https://en.wikipedia.org/wiki/Jorhat"
+      },
+      "folk_art": {
+        "Bihu dance": "https://en.wikipedia.org/wiki/Bihu_dance",
+        "Sattriya dance": "https://en.wikipedia.org/wiki/Sattriya"
+      }
+    },
+    "Dibrugarh": {
+      "festivals": {
+        "Brahmaputra Festival": "https://en.wikipedia.org/wiki/Brahmaputra_River",
+        "Bihu": "https://en.wikipedia.org/wiki/Bihu",
+        "Tea Festival": "https://en.wikipedia.org/wiki/Assam_tea"
+      },
+      "cuisine": {
+        "Assamese Thali": "https://en.wikipedia.org/wiki/Assamese_cuisine",
+        "Smoked fish": "https://en.wikipedia.org/wiki/Smoked_fish",
+        "Pitha": "https://en.wikipedia.org/wiki/Pitha"
+      },
+      "crafts": {
+        "Tea craft products": "https://en.wikipedia.org/wiki/Assam_tea",
+        "Bamboo handicrafts": "https://en.wikipedia.org/wiki/Bamboo_crafts_of_Assam"
+      },
+      "heritage": {
+        "Radha Krishna Temple": "https://en.wikipedia.org/wiki/Radha_Krishna",
+        "Dehing Patkai region": "https://en.wikipedia.org/wiki/Dehing_Patkai"
+      },
+      "folk_art": {
+        "Bihu dance": "https://en.wikipedia.org/wiki/Bihu_dance",
+        "Mising dance": "https://en.wikipedia.org/wiki/Mising_people"
+      }
+    },
+    "Tinsukia": {
+      "festivals": {
+        "Dehing Patkai Festival": "https://en.wikipedia.org/wiki/Dehing_Patkai",
+        "Brahmaputra Festival": "https://en.wikipedia.org/wiki/Brahmaputra_River"
+      },
+      "cuisine": {
+        "Tribal pork dishes": "https://en.wikipedia.org/wiki/Tribal_cuisine",
+        "Rice beer": "https://en.wikipedia.org/wiki/Rice_beer",
+        "Bamboo shoot curry": "https://en.wikipedia.org/wiki/Bamboo_shoot"
+      },
+      "crafts": {
+        "Bamboo craft": "https://en.wikipedia.org/wiki/Bamboo_crafts_of_Assam",
+        "Tribal weaving": "https://en.wikipedia.org/wiki/Handloom"
+      },
+      "heritage": {
+        "Digboi Oil Refinery": "https://en.wikipedia.org/wiki/Digboi",
+        "Margherita Coal Museum": "https://en.wikipedia.org/wiki/Margherita,_Assam"
+      },
+      "folk_art": {
+        "Singpho dance": "https://en.wikipedia.org/wiki/Singpho_people",
+        "Bihu dance": "https://en.wikipedia.org/wiki/Bihu_dance"
+      }
+    },
+    "Goalpara": {
+      "festivals": {
+        "Baikho Festival": "https://en.wikipedia.org/wiki/Rabha_people",
+        "Bihu": "https://en.wikipedia.org/wiki/Bihu"
+      },
+      "cuisine": {
+        "Rice dishes": "https://en.wikipedia.org/wiki/Assamese_cuisine",
+        "Fish curry": "https://en.wikipedia.org/wiki/Assamese_cuisine",
+        "Bamboo shoot dishes": "https://en.wikipedia.org/wiki/Bamboo_shoot"
+      },
+      "crafts": {
+        "Bamboo craft": "https://en.wikipedia.org/wiki/Bamboo_crafts_of_Assam",
+        "Handloom weaving": "https://en.wikipedia.org/wiki/Handloom"
+      },
+      "heritage": {
+        "Sri Surya Pahar": "https://en.wikipedia.org/wiki/Sri_Surya_Pahar"
+      },
+      "folk_art": {
+        "Goalpariya folk songs": "https://en.wikipedia.org/wiki/Goalpariya_folk_songs",
+        "Rabha dance": "https://en.wikipedia.org/wiki/Rabha_people"
+      }
+    },
+    "Nalbari": {
+      "festivals": {
+        "Nalbari Raas Festival": "https://en.wikipedia.org/wiki/Rasa_lila",
+        "Bihu": "https://en.wikipedia.org/wiki/Bihu",
+        "Durga Puja": "https://en.wikipedia.org/wiki/Durga_Puja"
+      },
+      "cuisine": {
+        "Pitha": "https://en.wikipedia.org/wiki/Pitha",
+        "Fish curry": "https://en.wikipedia.org/wiki/Assamese_cuisine",
+        "Assamese Thali": "https://en.wikipedia.org/wiki/Assamese_cuisine"
+      },
+      "crafts": {
+        "Bamboo crafts": "https://en.wikipedia.org/wiki/Bamboo_crafts_of_Assam",
+        "Handloom weaving": "https://en.wikipedia.org/wiki/Handloom"
+      },
+      "heritage": {
+        "Hari Mandir": "https://en.wikipedia.org/wiki/Nalbari"
+      },
+      "folk_art": {
+        "Bhaona": "https://en.wikipedia.org/wiki/Bhaona",
+        "Bihu dance": "https://en.wikipedia.org/wiki/Bihu_dance"
+      }
+    },
+    "Morigaon": {
+      "festivals": {
+        "Bihu": "https://en.wikipedia.org/wiki/Bihu",
+        "Durga Puja": "https://en.wikipedia.org/wiki/Durga_Puja",
+        "Holi": "https://en.wikipedia.org/wiki/Holi",
+        "Janmashtami": "https://en.wikipedia.org/wiki/Janmashtami",
+        "Morigaon Festival": "https://en.wikipedia.org/wiki/Morigaon_district"
+      },
+      "cuisine": {
+        "Assamese Thali": "https://en.wikipedia.org/wiki/Assamese_cuisine",
+        "Fish Tenga": "https://en.wikipedia.org/wiki/Fish_tenga",
+        "Pitha": "https://en.wikipedia.org/wiki/Pitha",
+        "Bamboo Shoot Curry": "https://en.wikipedia.org/wiki/Bamboo_shoot",
+        "Local sweets": "https://en.wikipedia.org/wiki/Assamese_cuisine"
+      },
+      "crafts": {
+        "Bamboo craft": "https://en.wikipedia.org/wiki/Bamboo_crafts_of_Assam",
+        "Handloom weaving": "https://en.wikipedia.org/wiki/Handloom",
+        "Cane furniture": "https://en.wikipedia.org/wiki/Cane_furniture",
+        "Pottery": "https://en.wikipedia.org/wiki/Pottery",
+        "Traditional jewelry": "https://en.wikipedia.org/wiki/Assamese_jewelry"
+      },
+      "heritage": {
+        "Pobitora Wildlife Sanctuary": "https://en.wikipedia.org/wiki/Pobitora_Wildlife_Sanctuary",
+        "Morigaon Town": "https://en.wikipedia.org/wiki/Morigaon_district",
+        "Ancient temples": "https://en.wikipedia.org/wiki/Morigaon_district",
+        "Historical monuments": "https://en.wikipedia.org/wiki/Morigaon_district"
+      },
+      "folk_art": {
+        "Bihu dance": "https://en.wikipedia.org/wiki/Bihu_dance",
+        "Folk songs": "https://en.wikipedia.org/wiki/Assamese_folk_music",
+        "Traditional theatre": "https://en.wikipedia.org/wiki/Bhaona",
+        "Ojapali": "https://en.wikipedia.org/wiki/Ojapali",
+        "Sattriya dance": "https://en.wikipedia.org/wiki/Sattriya"
+      }
+    }
+  }
+}

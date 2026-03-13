@@ -1,7 +1,9 @@
+
 "use client";
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 type Category =
   | "festival"
@@ -31,6 +33,7 @@ const districts = [
   { slug: "tinsukia", name: "Tinsukia" },
   { slug: "goalpara", name: "Goalpara" },
   { slug: "nalbari", name: "Nalbari" },
+  { slug: "morigaon", name: "Morigaon" },
 ];
 
 export default function ContributePage() {
@@ -49,6 +52,7 @@ export default function ContributePage() {
     media_url: "",
     tags: "",
     contributor_name: "",
+    wikipedia_url: "",
   });
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -85,6 +89,7 @@ export default function ContributePage() {
         media_url: "",
         tags: "",
         contributor_name: "",
+        wikipedia_url: "",
       });
 
       // Redirect after 2 seconds
@@ -106,17 +111,20 @@ export default function ContributePage() {
       <div className="mx-auto max-w-2xl">
         <div className="glass-panel p-6 sm:p-8">
           <div className="mb-6">
-            <button
-              onClick={() => router.push("/")}
-              className="mb-4 text-sm text-sky-300 hover:text-sky-200"
-            >
-              ← Back to map
-            </button>
+            <div className="mb-4 flex justify-between items-center">
+              <button
+                onClick={() => router.push("/")}
+                className="text-sm text-sky-300 hover:text-sky-200"
+              >
+                ← Back to map
+              </button>
+              <ThemeToggle />
+            </div>
             <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">
               Contribute an Experience
             </h1>
             <p className="mt-2 text-sm text-slate-300">
-              Share a cultural experience from your district. It will appear on the map immediately.
+              Share a cultural experience from your district. It will appear on map immediately.
             </p>
           </div>
 
@@ -265,6 +273,21 @@ export default function ContributePage() {
                   setFormData({ ...formData, contributor_name: e.target.value })
                 }
                 placeholder="How you'd like to be credited"
+                className="w-full rounded-lg border border-white/10 bg-slate-900/50 px-4 py-2.5 text-sm text-slate-100 placeholder-slate-500 focus:border-sky-500 focus:outline-none"
+              />
+            </div>
+
+            <div>
+              <label className="mb-2 block text-sm font-medium text-slate-200">
+                Wikipedia URL (optional)
+              </label>
+              <input
+                type="url"
+                value={formData.wikipedia_url}
+                onChange={(e) =>
+                  setFormData({ ...formData, wikipedia_url: e.target.value })
+                }
+                placeholder="https://en.wikipedia.org/wiki/..."
                 className="w-full rounded-lg border border-white/10 bg-slate-900/50 px-4 py-2.5 text-sm text-slate-100 placeholder-slate-500 focus:border-sky-500 focus:outline-none"
               />
             </div>

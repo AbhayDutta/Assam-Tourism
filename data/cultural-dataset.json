@@ -1,0 +1,92 @@
+{
+  "districts": [
+    {
+      "district": "Guwahati",
+      "festivals": ["Ambubachi Mela", "Brahmaputra Beach Festival", "Rongali Bihu", "Magh Bihu", "Kati Bihu"],
+      "cuisine": ["Assamese Thali", "Fish Tenga", "Pitha", "Til Laru"],
+      "crafts": ["Bamboo and cane craft", "Silk weaving (Muga, Eri)", "Bell metal craft"],
+      "heritage": ["Kamakhya Temple", "Umananda Temple", "Assam State Museum"],
+      "folk_art": ["Bihu Dance", "Sattriya Dance", "Ojapali"]
+    },
+    {
+      "district": "Majuli",
+      "festivals": ["Raas Mahotsav", "Ali Ai Ligang", "Bihu", "Majuli Music Festival"],
+      "cuisine": ["Apong", "Pura Maas", "Pitha", "Smoked fish"],
+      "crafts": ["Mask making", "Handloom weaving", "Pottery", "Bamboo craft"],
+      "heritage": ["Dakhinpat Satra", "Kamalabari Satra", "Auniati Satra"],
+      "folk_art": ["Bhaona theatre", "Sattriya dance", "Gumrag dance"]
+    },
+    {
+      "district": "Sivasagar",
+      "festivals": ["Bihu", "Raas Festival", "Me Dam Me Phi"],
+      "cuisine": ["Duck curry", "Fish tenga", "Pitha"],
+      "crafts": ["Mask craft", "Brass and bell metal work"],
+      "heritage": ["Rang Ghar", "Talatal Ghar", "Sivasagar Tank"],
+      "folk_art": ["Sattriya dance", "Bhaona", "Bihu dance"]
+    },
+    {
+      "district": "Kaziranga",
+      "festivals": ["Karbi Youth Festival", "Rongali Bihu", "Kaziranga Elephant Festival"],
+      "cuisine": ["Bamboo shoot curry", "Smoked pork", "Rice beer"],
+      "crafts": ["Karbi weaving", "Bamboo handicrafts"],
+      "heritage": ["Kaziranga National Park"],
+      "folk_art": ["Karbi tribal dance", "Bihu dance"]
+    },
+    {
+      "district": "Tezpur",
+      "festivals": ["Litchi Festival", "Bihu", "Durga Puja"],
+      "cuisine": ["Assamese Thali", "Pitha", "Fish dishes"],
+      "crafts": ["Handloom weaving", "Bamboo crafts"],
+      "heritage": ["Agnigarh Hill", "Mahabhairab Temple", "Bamuni Hills"],
+      "folk_art": ["Bihu dance", "Ojapali"]
+    },
+    {
+      "district": "Jorhat",
+      "festivals": ["Tea Festival", "Bihu", "Ali Ai Ligang"],
+      "cuisine": ["Assamese fish curry", "Pitha", "Rice beer"],
+      "crafts": ["Tea craft souvenirs", "Bamboo craft", "Silk weaving"],
+      "heritage": ["Tocklai Tea Research Institute", "Raja Maidam"],
+      "folk_art": ["Bihu dance", "Sattriya dance"]
+    },
+    {
+      "district": "Dibrugarh",
+      "festivals": ["Brahmaputra Festival", "Bihu", "Tea Festival"],
+      "cuisine": ["Assamese Thali", "Smoked fish", "Pitha"],
+      "crafts": ["Tea craft products", "Bamboo handicrafts"],
+      "heritage": ["Radha Krishna Temple", "Dehing Patkai region"],
+      "folk_art": ["Bihu dance", "Mising dance"]
+    },
+    {
+      "district": "Tinsukia",
+      "festivals": ["Dehing Patkai Festival", "Brahmaputra Festival"],
+      "cuisine": ["Tribal pork dishes", "Rice beer", "Bamboo shoot curry"],
+      "crafts": ["Bamboo craft", "Tribal weaving"],
+      "heritage": ["Digboi Oil Refinery", "Margherita Coal Museum"],
+      "folk_art": ["Singpho dance", "Bihu dance"]
+    },
+    {
+      "district": "Goalpara",
+      "festivals": ["Baikho Festival", "Bihu"],
+      "cuisine": ["Rice dishes", "Fish curry", "Bamboo shoot dishes"],
+      "crafts": ["Bamboo craft", "Handloom weaving"],
+      "heritage": ["Sri Surya Pahar"],
+      "folk_art": ["Goalpariya folk songs", "Rabha dance"]
+    },
+    {
+      "district": "Nalbari",
+      "festivals": ["Nalbari Raas Festival", "Bihu", "Durga Puja"],
+      "cuisine": ["Pitha", "Fish curry", "Assamese Thali"],
+      "crafts": ["Bamboo crafts", "Handloom weaving"],
+      "heritage": ["Hari Mandir"],
+      "folk_art": ["Bhaona", "Bihu dance"]
+    },
+    {
+      "district": "Morigaon",
+      "festivals": ["Jonbeel Mela", "Bihu", "Durga Puja"],
+      "cuisine": ["Assamese Thali", "Fish Tenga", "Pitha", "Til Laru", "Bamboo shoot dishes"],
+      "crafts": ["Bamboo and cane craft", "Handloom weaving", "Tribal basket making"],
+      "heritage": ["Pobitora Wildlife Sanctuary", "Mayong"],
+      "folk_art": ["Bihu Dance", "Tiwa tribal dance", "Goalpariya folk songs"]
+    }
+  ]
+}

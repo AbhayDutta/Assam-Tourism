@@ -1,3 +1,4 @@
+
 import { NextRequest, NextResponse } from "next/server";
 import {
   createExperience,
@@ -8,9 +9,21 @@ import {
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
   const district = searchParams.get("district") || undefined;
+  const category = searchParams.get("category") || undefined;
+
+  // Map frontend category names to database enum values
+  const categoryMap: { [key: string]: string } = {
+    "festivals": "festival",
+    "cuisine": "cuisine", 
+    "crafts": "craft",
+    "heritage": "heritage",
+    "folkArt": "folk_art"
+  };
+
+  const dbCategory = category ? categoryMap[category] || category : undefined;
 
   try {
-    const experiences = await listExperiences(district);
+    const experiences = await listExperiences(district, dbCategory);
     return NextResponse.json({ experiences });
   } catch (error) {
     console.error("Error fetching experiences", error);
@@ -33,6 +46,7 @@ export async function POST(request: NextRequest) {
       media_url,
       tags,
       contributor_name,
+      wikipedia_url,
     } = body;
 
     if (!district_slug || !category || !title || !description) {
@@ -66,6 +80,7 @@ export async function POST(request: NextRequest) {
       media_url,
       tags: Array.isArray(tags) ? tags : [],
       contributor_name,
+      wikipedia_url,
     });
 
     return NextResponse.json({ experience }, { status: 201 });
@@ -77,4 +92,3 @@ export async function POST(request: NextRequest) {
     );
   }
 }
-

@@ -7,7 +7,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "seed": "tsx scripts/seed-experiences.ts"
+    "seed": "tsx scripts/seed-experiences.ts",
+    "seed-cultural": "tsx scripts/seed-cultural-data.ts",
+    "add-wikipedia": "tsx scripts/add-wikipedia-column.ts",
+    "seed-wikipedia": "tsx scripts/seed-wikipedia-urls.ts",
+    "seed-all-wikipedia": "tsx scripts/seed-all-wikipedia-urls.ts",
+    "add-morigaon": "tsx scripts/add-morigaon-district.ts",
+    "update-morigaon": "tsx scripts/update-morigaon-experiences.ts",
+    "add-morigaon-column": "tsx scripts/add-morigaon-district-column.ts"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.2",

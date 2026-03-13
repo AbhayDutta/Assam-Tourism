@@ -1,9 +1,8 @@
+"use client";
 
-import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
 import { ThemeProvider } from "@/contexts/ThemeContext";
-import { LanguageProvider } from "@/contexts/LanguageContext";
+import { LanguageProvider, useLanguage } from "@/contexts/LanguageContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,18 +14,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Aloukik Axom - Cultural Heritage",
-  description: "Discover Assam's rich cultural heritage - festivals, cuisine, crafts, and heritage sites across districts.",
-};
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export function LayoutContent({ children }: { children: React.ReactNode }) {
+  const { language } = useLanguage();
+  
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={language}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
