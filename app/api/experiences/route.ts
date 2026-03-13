@@ -10,7 +10,7 @@ export async function GET(request: NextRequest) {
   const district = searchParams.get("district") || undefined;
 
   try {
-    const experiences = await listExperiences(district, true);
+    const experiences = await listExperiences(district);
     return NextResponse.json({ experiences });
   } catch (error) {
     console.error("Error fetching experiences", error);

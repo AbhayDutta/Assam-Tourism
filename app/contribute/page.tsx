@@ -116,8 +116,7 @@ export default function ContributePage() {
               Contribute an Experience
             </h1>
             <p className="mt-2 text-sm text-slate-300">
-              Share a cultural experience from your district. Once approved, it
-              will appear on the cultural map.
+              Share a cultural experience from your district. It will appear on the map immediately.
             </p>
           </div>
 
@@ -125,7 +124,7 @@ export default function ContributePage() {
             <div className="mb-6 rounded-lg border border-green-500/30 bg-green-500/10 p-4 text-sm text-green-200">
               <p className="font-medium">✅ Experience submitted successfully!</p>
               <p className="mt-1 text-green-300/80">
-                It will be reviewed and appear on the map once approved.
+                Your experience is now live on the map!
                 Redirecting to home...
               </p>
             </div>
