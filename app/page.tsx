@@ -50,7 +50,7 @@ const districts = [
 
 type CategoryFilter = "all" | "festivals" | "cuisine" | "heritage" | "crafts" | "folkArt";
 
-function useExperiences(districtSlug?: string, category: CategoryFilter) {
+function useExperiences(districtSlug: string | undefined, category: CategoryFilter) {
   const [experiences, setExperiences] = useState<Experience[]>([]);
   const [loading, setLoading] = useState(true);
   const cacheRef = useRef<Map<string, Experience[]>>(new Map());
