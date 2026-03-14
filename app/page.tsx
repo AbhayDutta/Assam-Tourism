@@ -7,6 +7,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { LanguageSelector } from "@/components/LanguageSelector";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { ItineraryPlanner } from "@/components/ItineraryPlanner";
+import { ChatBot } from "@/components/ChatBot";
 
 type ExperienceCategory = "festivals" | "cuisine" | "crafts" | "heritage" | "folkArt";
 
@@ -398,6 +399,9 @@ export default function Home() {
           </section>
         </div>
       </div>
+      
+      {/* ChatBot */}
+      <ChatBot />
     </main>
   );
 }
