@@ -345,23 +345,6 @@ export default function GuidesPage() {
     fetchGuides();
   }, [selectedDistrict, selectedSpecialty, showAvailableOnly]);
 
-  useEffect(() => {
-    const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        setShowBookingModal(false);
-      }
-    };
-
-    document.addEventListener('keydown', handleEscape);
-    return () => {
-      document.removeEventListener('keydown', handleEscape);
-    };
-  }, []);
-
-  useEffect(() => {
-    fetchGuides();
-  }, [selectedDistrict, selectedSpecialty, showAvailableOnly]);
-
   return (
     <main className="min-h-screen bg-gradient-to-br from-[var(--background)] via-[var(--background)]/95 to-[var(--background)] px-4 py-8 text-[var(--foreground)] sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
