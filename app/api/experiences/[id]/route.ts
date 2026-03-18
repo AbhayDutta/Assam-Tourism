@@ -29,6 +29,23 @@ export async function DELETE(
       );
     }
 
+    // Get user authentication info
+    const token = request.cookies.get('auth-token')?.value;
+    let currentUser = null;
+
+    if (token) {
+      try {
+        const decoded = JSON.parse(Buffer.from(token, 'base64').toString());
+        currentUser = {
+          id: decoded.userId,
+          role: decoded.role,
+          name: decoded.name
+        };
+      } catch (error) {
+        // Invalid token, continue as unauthenticated
+      }
+    }
+
     // First check if the experience exists
     const [experience] = await sql`
       SELECT id, title, district_slug, contributor_name 
@@ -40,6 +57,24 @@ export async function DELETE(
       return NextResponse.json(
         { error: "Experience not found" },
         { status: 404 }
+      );
+    }
+
+    // Check permissions
+    if (!currentUser) {
+      return NextResponse.json(
+        { error: "Authentication required to delete experiences" },
+        { status: 401 }
+      );
+    }
+
+    const isAdmin = currentUser.role === 'admin';
+    const isOwner = currentUser.name === experience.contributor_name;
+
+    if (!isAdmin && !isOwner) {
+      return NextResponse.json(
+        { error: "You can only delete your own experiences" },
+        { status: 403 }
       );
     }
 

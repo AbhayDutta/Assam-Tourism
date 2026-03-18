@@ -1,0 +1,30 @@
+[
+  {
+    "id": "admin-1",
+    "email": "abhaydutta123456@gmail.com",
+    "password": "Hutao098",
+    "role": "admin",
+    "name": "Admin User"
+  },
+  {
+    "id": "user-1773681649330",
+    "email": "test@example.com",
+    "password": "test123",
+    "role": "user",
+    "name": "Test User"
+  },
+  {
+    "id": "user-1773681732075",
+    "email": "Duttaabhay593@gmail.com",
+    "password": "Hutao098",
+    "role": "user",
+    "name": "Abhay Dutta"
+  },
+  {
+    "id": "user-1773869805174",
+    "email": "duttaabhay593@gmail.com",
+    "password": "Hutao098",
+    "role": "user",
+    "name": "Abhay Dutta"
+  }
+]

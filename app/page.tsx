@@ -1,9 +1,11 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import { useRouter } from "next/navigation";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useAuth } from "@/contexts/AuthContext";
 import { LanguageSelector } from "@/components/LanguageSelector";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { ItineraryPlanner } from "@/components/ItineraryPlanner";
@@ -108,6 +110,7 @@ function useExperiences(districtSlug: string | undefined, category: CategoryFilt
 
 function ExperienceCard({ exp }: { exp: Experience }) {
   const { t } = useLanguage();
+  const { user, isOwner } = useAuth();
 
   const handleDelete = async () => {
     if (!confirm(`Are you sure you want to delete "${exp.title}"?`)) {
@@ -123,12 +126,15 @@ function ExperienceCard({ exp }: { exp: Experience }) {
         // Refresh the page to show updated list
         window.location.reload();
       } else {
-        alert('Failed to delete experience');
+        const data = await response.json();
+        alert(data.error || 'Failed to delete experience');
       }
     } catch {
       alert('Error deleting experience');
     }
   };
+
+  const canDelete = user && isOwner(exp.contributor_name);
 
   return (
     <article className="group rounded-lg border border-[var(--border)] bg-[var(--surface)] transition-all duration-200 hover:border-[var(--accent-warm)]/30 hover:shadow-sm">
@@ -188,21 +194,23 @@ function ExperienceCard({ exp }: { exp: Experience }) {
             <span className="text-xs text-[var(--muted)] opacity-75">
               {exp.contributor_name}
             </span>
-            <button
-              onClick={handleDelete}
-              className="text-xs text-red-500 hover:text-red-400 transition-colors"
-              title="Delete experience"
-            >
-              <svg
-                className="h-3.5 w-3.5"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={2}
-                viewBox="0 0 24 24"
+            {canDelete && (
+              <button
+                onClick={handleDelete}
+                className="text-xs text-red-500 hover:text-red-400 transition-colors"
+                title="Delete experience"
               >
-                <path d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-              </svg>
-            </button>
+                <svg
+                  className="h-3.5 w-3.5"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                </svg>
+              </button>
+            )}
           </div>
         </div>
       </div>
@@ -211,10 +219,29 @@ function ExperienceCard({ exp }: { exp: Experience }) {
 }
 
 export default function Home() {
+  const { user, loading } = useAuth();
+  const router = useRouter();
   const [district, setDistrict] = useState<string | undefined>("guwahati");
   const [category, setCategory] = useState<CategoryFilter>("all");
-  const { experiences, loading } = useExperiences(district, category);
+  const { experiences, loading: experiencesLoading } = useExperiences(district, category);
   const { t } = useLanguage();
+  const { logout } = useAuth();
+
+  // Redirect to login if user is not authenticated
+  useEffect(() => {
+    if (!loading && !user) {
+      router.push('/login');
+    }
+  }, [user, loading, router]);
+
+  // Show loading or null while checking authentication
+  if (loading || !user) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-[var(--background)] via-[var(--background)]/95 to-[var(--background)] flex items-center justify-center">
+        <div className="text-[var(--muted)]">Loading...</div>
+      </div>
+    );
+  }
 
   const activeDistrict = districts.find((d) => d.slug === district);
   const activeDistrictLabel = activeDistrict?.name || "All Assam";
@@ -245,9 +272,44 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <ItineraryPlanner />
-              <LanguageSelector />
-              <ThemeToggle />
+              {/* Main Action Buttons */}
+              <div className="flex items-center gap-2">
+                <ItineraryPlanner />
+                <a
+                  href="/guides"
+                  className="rounded-full border border-[var(--border)] bg-[var(--surface)] px-3 py-1 text-xs font-light transition hover:border-[var(--accent-warm)]"
+                >
+                  🧭 Guides
+                </a>
+              </div>
+              
+              {/* User Actions */}
+              {user ? (
+                <div className="flex items-center gap-2">
+                  <span className="text-xs text-[var(--muted)]">
+                    Welcome, {user.name}
+                  </span>
+                  <button
+                    onClick={logout}
+                    className="rounded-full border border-[var(--border)] bg-[var(--surface)] px-3 py-1 text-xs font-light transition hover:border-[var(--accent-warm)]"
+                  >
+                    Logout
+                  </button>
+                </div>
+              ) : (
+                <a
+                  href="/login"
+                  className="rounded-full border border-[var(--accent-warm)] bg-[var(--accent-warm)] text-white px-3 py-1 text-xs font-light transition hover:bg-[var(--accent-warm-hover)]"
+                >
+                  Login
+                </a>
+              )}
+              
+              {/* Settings */}
+              <div className="flex items-center gap-2 border-l border-[var(--border)] pl-3">
+                <LanguageSelector />
+                <ThemeToggle />
+              </div>
             </div>
           </div>
         </header>
